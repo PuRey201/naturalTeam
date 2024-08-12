@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdown Menu 1</title>
+    <style>
+        .mainmenu {
+            background-color: rgb(255, 0, 208);
+            width: 150px;
+            padding: 20px;
+            position: relative;
+            display: inline-block;
+            border: 3px solid black;
+        }
+
+        .dropdownmenu {
+            background-color: rgb(255, 0, 208);
+            width: 150px;
+            padding: 20px;
+            position: absolute;
+            display: none;
+            top: 60px;
+            left: 0px;
+        }
+
+        .mainmenu:hover .dropdownmenu{
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Example Drop Down Menu</h1>
+    <div>Here is the Dropdown Menu</div>
+    <div class="mainmenu">Main Menu
+        <div class="dropdownmenu">Dropdown</div>
+    </div>
+    
+</body>
+</html>
